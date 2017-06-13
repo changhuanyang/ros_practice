@@ -1,0 +1,26 @@
+<launch>
+
+  <!-- For simplicity, assume top-level manager already running -->
+
+  <!-- Mimic remapping, so can launch with 'camera:=prosilica' -->
+  <arg name="camera" default="camera" />
+  
+  <!-- Push down all topics/nodelets into "camera" namespace -->
+  <node pkg="nodelet" type="nodelet" name="manager"  args="manager"/>
+  <!-- group ns="$(arg camera)" -->
+
+    <!-- crop the image images -->
+    <!-- node pkg="nodelet" type="nodelet" name="img_pub"
+          args="load image_tools/image_publisher_nodelet manager"/ -->
+
+    <!-- Debayer and publish monochrome and color topics -->
+    <node pkg="nodelet" type="nodelet" name="debayer"
+          args="load image_proc/debayer manager" />
+
+    <!-- crop the image images -->
+    <node pkg="nodelet" type="nodelet" name="cropimg"
+          args="load image_proc/crop_decimate manager" />
+    <remap from="camera_out" to="image_crop" />
+  <!-- /group --> <!-- camera ns -->
+
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+   <node pkg="dynamic_tutorials" type="server" name="server2" output="screen" />
+   <param name="server2/int_param" type="int" value="20" />
+</launch>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>tusimple_driver_msgs</name>
+  <version>0.0.0</version>
+  <description>The tusimple_driver_msgs package</description>
+
+  <maintainer email="zimpha@gmail.com">Xi Lin</maintainer>
+
+  <license>MIT</license>
+
+  <author email="zimpha@gmail.com">Xi Lin</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>statistics_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <run_depend>statistics_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <export></export>
+</package>

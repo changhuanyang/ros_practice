@@ -1,0 +1,4 @@
+<launch>
+   <node pkg="dynamic_publisher" type="server" name="server2" output="screen" />
+   
+</launch>
