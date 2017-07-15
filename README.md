@@ -27,3 +27,10 @@ ros::param::get("camera_topic_ns",camera_topic);       // /group_ns/camera_topic
 ros::param::get("~camera_topic_private",camera_topic); // /group_ns/node_name/camera_topic_private
 ````
 ------------------------------------------------------------------------------------------------------
+Multi thread for callback
+http://answers.ros.org/question/56275/suggest-good-example-of-multi-threading-with-ros/
+
+http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning
+
+useful example:
+http://answers.ros.org/question/214629/multiple-callback-queues/
