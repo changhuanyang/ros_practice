@@ -35,3 +35,6 @@ http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning
 
 useful example:  
 http://answers.ros.org/question/214629/multiple-callback-queues/
+
+rosspin、rosspinOnce及多线程订阅 
+http://www.rosclub.cn/post-274.html
