@@ -38,3 +38,7 @@ http://answers.ros.org/question/214629/multiple-callback-queues/
 
 rosspin、rosspinOnce及多线程订阅 
 http://www.rosclub.cn/post-274.html
+
+
+reconfigure 的參數設定順序
+https://answers.ros.org/question/28327/dynamic-reconfigure-default-parameters/
